@@ -1,0 +1,5 @@
+name=input("Enter your name: ")
+gender=input('enter your gender')
+age=int(input("Enter your age: "))
+Fee=float(input("Enter your fee: "))
+marks=int(input("Enter your marks: "))
