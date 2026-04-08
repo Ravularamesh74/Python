@@ -80,10 +80,17 @@ It focuses on **core Python concepts, logic-building exercises, and practical im
 
 ```bash
 git clone https://github.com/Ravularamesh74/Python.git
-cd Python
+
+```
+---
+```
 🔹 Run a Program
+cd python
 python filename.py
 
+```
+---
+```
 👉 Example:
 
 python fibonacci.py
@@ -104,8 +111,10 @@ python fibonacci.py
 🚀 Automation Scripts
 🚀 Web Development (Flask/Django)
 🚀 Data Science Projects
-🤝 Contributing
 
+```
+
+🤝 Contributing
 Contributions are welcome!
 
 Fork the repository
@@ -113,9 +122,11 @@ Create a new branch
 Commit your changes
 Submit a Pull Request
 👨‍💻 Author
+```
 
 Ravula Ramesh
 🔗 https://github.com/Ravularamesh74
+```
 
 🌟 Support
 
@@ -126,7 +137,9 @@ If you like this project:
 📢 Share it
 
 🏆 Final Note
+```
 
 "Python is simple, but mastering it makes you powerful." 🐍
+```
 
 
