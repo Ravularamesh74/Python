@@ -1,37 +1,40 @@
-import re
-from collections import Counter
+from parser import parse_line
+from analyzer import analyze, filter_by_status
+from utils import log
 
 LOG_FILE = "sample.log"
 
-ip_pattern = r'\b(?:[0-9]{1,3}\.){3}[0-9]{1,3}\b'
-endpoint_pattern = r'\"GET (.*?) HTTP'
+def load_logs():
+    logs = []
+    with open(LOG_FILE, "r") as f:
+        for line in f:
+            parsed = parse_line(line)
+            if parsed:
+                logs.append(parsed)
+    return logs
 
-def analyze_logs():
-    with open(LOG_FILE, "r") as file:
-        data = file.readlines()
+def save_report(report):
+    with open("report.txt", "w") as f:
+        for key, value in report.items():
+            f.write(f"{key}: {value}\n")
 
-    ips = []
-    endpoints = []
-    errors = 0
+def main():
+    log("Loading logs...")
+    logs = load_logs()
 
-    for line in data:
-        ip = re.search(ip_pattern, line)
-        endpoint = re.search(endpoint_pattern, line)
+    log("Analyzing logs...")
+    report = analyze(logs)
 
-        if ip:
-            ips.append(ip.group())
+    print("\n📊 Report:")
+    for k, v in report.items():
+        print(f"{k}: {v}")
 
-        if endpoint:
-            endpoints.append(endpoint.group(1))
+    save_report(report)
+    log("Report saved to report.txt")
 
-        if "404" in line:
-            errors += 1
-
-    print("📊 Log Analysis Report")
-    print("----------------------")
-    print("Top IP:", Counter(ips).most_common(1))
-    print("Most Visited Endpoint:", Counter(endpoints).most_common(1))
-    print("Total 404 Errors:", errors)
+    # Example filter
+    errors_404 = filter_by_status(logs, 404)
+    print(f"\n🔍 404 Errors: {len(errors_404)}")
 
 if __name__ == "__main__":
-    analyze_logs()
+    main()

@@ -1,0 +1,6 @@
+📊 Report:
+top_ips: [('192.168.1.1', 2)]
+top_endpoints: [('/home', 1), ('/login', 1)]
+errors_4xx: 1
+errors_5xx: 1
+total_requests: 3
