@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Print Hello",
+    "type": "print",
+    "message": "Hello World!",
+    "interval": 5
+  },
+  {
+    "name": "Run Script",
+    "type": "command",
+    "command": "echo Running external command",
+    "interval": 10
+  }
+]
