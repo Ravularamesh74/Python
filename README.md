@@ -221,31 +221,6 @@ python main.py
 
 
 
-## 🧑‍💻 Author
-
-**Ravula Ramesh**
-🔗 [https://github.com/Ravularamesh74](https://github.com/Ravularamesh74)
-
----
-
-## 📜 License
-
-This project is licensed under the **MIT License**.
-
----
-
-## ⭐ Support
-
-If you found this useful:
-
-⭐ Star the repo
-🍴 Fork it
-📢 Share it
-
----
-
-
-
 
 
 
@@ -337,29 +312,31 @@ python fibonacci.py
 
 ```
 
-🤝 Contributing
-Contributions are welcome!
 
-Fork the repository
-Create a new branch
-Commit your changes
-Submit a Pull Request
-👨‍💻 Author
-```
+## 🧑‍💻 Author
 
-Ravula Ramesh
-🔗 https://github.com/Ravularamesh74
-```
+**Ravula Ramesh**
+🔗 [https://github.com/Ravularamesh74](https://github.com/Ravularamesh74)
 
-🌟 Support
+---
 
-If you like this project:
+## 📜 License
 
-⭐ Star the repository
+This project is licensed under the **MIT License**.
+
+---
+
+## ⭐ Support
+
+If you found this useful:
+
+⭐ Star the repo
 🍴 Fork it
 📢 Share it
 
-🏆 Final Note
+---
+
+
 ```
 
 "Python is simple, but mastering it makes you powerful." 🐍
